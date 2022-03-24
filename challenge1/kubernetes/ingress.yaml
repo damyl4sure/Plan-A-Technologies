@@ -1,0 +1,24 @@
+#Important: The api version depends on the installed kubernetes version
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: challenge1-ingress
+  namespace: challenge1
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+  - host: plan-a-technologies-challenge1.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: challenge1-service
+            port: 
+              number: 8000
+        path: /
+        pathType: ImplementationSpecific      
+  tls:
+    - hosts:
+        - plan-a-technologies-challenge1.com
+      secretName: challenge1-tls
