@@ -1,12 +1,12 @@
-#Directory folder tree
+# Directory folder tree
 
-'''
-____PLAN-A-TECHNOLOGIES
-| |____challlenge1   
-   | |____challlenge1 (Django APP)
-   | |____kubernetes
-| |____challlenge2
-   | |____terraform
-| |____.gitignore
-| |____README.md
-'''
+```
+├── PLAN-A-TECHNOLOGIES
+│   ├── challlenge1
+│   │   ├── challlenge1 (Django APP)
+|   |   ├── kubernetes
+│   ├── challlenge2
+│   |   ├── terraform
+│   ├── .gitignore
+│   ├── README.md
+```
